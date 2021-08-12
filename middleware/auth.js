@@ -3,6 +3,9 @@
 const jwt = require("jsonwebtoken");
 const { SECRET_KEY } = require("../config");
 
+const Router = require("express").Router;
+const router = new Router();
+
 /** Middleware: Authenticate user. */
 
 function authenticateJWT(req, res, next) {
@@ -47,3 +50,5 @@ module.exports = {
   ensureLoggedIn,
   ensureCorrectUser
 };
+
+module.exports = router;

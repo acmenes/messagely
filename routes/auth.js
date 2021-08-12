@@ -1,3 +1,10 @@
+const jwt = require("jsonwebtoken");
+const Router = require("express").Router;
+const router = new Router();
+
+const {SECRET_KEY} = require("../config");
+const ExpressError = require("../expressError");
+
 /** POST /login - login: {username, password} => {token}
  *
  * Make sure to update their last-login!
@@ -11,3 +18,5 @@
  *
  *  Make sure to update their last-login!
  */
+
+module.exports = router;

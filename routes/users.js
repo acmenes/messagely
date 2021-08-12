@@ -1,3 +1,6 @@
+const Router = require("express").Router;
+const router = new Router();
+
 /** GET / - get list of users.
  *
  * => {users: [{username, first_name, last_name, phone}, ...]}
@@ -32,3 +35,5 @@
  *                 to_user: {username, first_name, last_name, phone}}, ...]}
  *
  **/
+
+module.exports = router;
