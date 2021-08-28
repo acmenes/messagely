@@ -50,5 +50,3 @@ module.exports = {
   ensureLoggedIn,
   ensureCorrectUser
 };
-
-module.exports = router;

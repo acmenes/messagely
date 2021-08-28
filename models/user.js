@@ -61,7 +61,8 @@ class User {
     const results = await db.query(
       `SELECT username
       FROM users;
-      WHERE username = $1`,
+      WHERE username = $1
+      RETURNING first_name, last_name, phone, join_at, last_login_at`,
       [username]
     )
     const user = ressults.rows[0]
